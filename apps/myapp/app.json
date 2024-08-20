@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "AppsMyapp",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "scheme": "my-app-scheme",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.myapp.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.myapp.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-dev-launcher",
+        {
+          "launchMode": "most-recent"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "862cbbba-197c-402c-a514-53c2fcc31635"
+      }
+    }
+  }
+}
