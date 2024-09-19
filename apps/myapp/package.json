@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.0.1",
   "private": true,
-  "main": "expo-router/entry",
+  "main": "index.ts",
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
