@@ -7,9 +7,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-import {
-  useQuery,
-} from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { usePokeApi } from '@org/hooks';
 
 export default function App() {
@@ -40,17 +38,21 @@ export default function App() {
         >
           <View style={styles.section}>
             <Text>
-              {data ? JSON.stringify(data).slice(0, 100) : 'No data from react-query'}
+              {data
+                ? JSON.stringify(data).slice(0, 100)
+                : 'No data from react-query'}
             </Text>
             <Text>
-              {data2 ? JSON.stringify(data2).slice(0, 100) : 'No data from react-query'}
+              {data2
+                ? JSON.stringify(data2).slice(0, 100)
+                : 'No data from react-query'}
             </Text>
           </View>
         </ScrollView>
       </SafeAreaView>
     </>
   );
-};
+}
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: '#ffffff',
