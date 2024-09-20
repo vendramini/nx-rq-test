@@ -2,7 +2,7 @@
   "name": "myapp",
   "version": "0.0.1",
   "private": true,
-  "main": "expo-router/entry",
+  "main": "index.ts",
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
@@ -35,8 +35,6 @@
     "react-native-safe-area-context": "*"
   },
   "scripts": {
-    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/myapp && cp package-lock.json apps/myapp",
-    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/myapp",
     "android": "expo run:android",
     "ios": "expo run:ios"
   },
